@@ -9,4 +9,5 @@ int main(){
       }
       cout << factorial <<endl; // prints out the factorial of n
     }
+  return 0;
 }
