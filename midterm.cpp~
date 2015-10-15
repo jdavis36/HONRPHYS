@@ -1,0 +1,14 @@
+#include <iostream> 
+#include <string> 
+#include <stdlib.h>
+using namespace std;
+double randomDouble(int floor, int ceiling)
+{
+  srand(time(0));
+  double r = (double) rand() / (double) RAND_MAX;
+  return floor + r * (ceiling - floor);
+}
+int main(){
+  cout << randomDouble(4,200) ;
+  return 0;
+}
